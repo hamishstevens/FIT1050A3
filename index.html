@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Golden Mug Cafe</title>
+    <meta charset="UTF-8" content="noindex,nofollow">
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="icon" href="images/GoldenMugCafeIcon.ico">
+</head>
+
+
+
+<!-- Colour Set -->           
+<!-- Dark Brown: #614f42 -->  
+<!-- Dark Grey: #50514f -->   
+<!-- Gold: #b07d32 -->        
+<!-- Sandy Yellow: #eacf92 -->
+<!-- Light Grey: #eeeee -->
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/GoldenMugCafeLogo2.webp" alt="logo" aria-hidden="true" decoding="async">
+
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a id="btn_order" class="cs-li-link">
+                            Order Online
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a id="btn_about" class="cs-li-link">
+                            About Us
+                        </a>
+                    </li>                    
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Menus
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Dine In</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Catering Menu</a>
+                            </li>
+                        </ul>
+                    </li>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:(03) 9929 8805" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                (03) 9929 8805
+            </a>
+            <a href="https://www.instagram.com/goldenmug_melbourne/" class="cs-social-link">
+                <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+            </a>            
+            <div class="cs-social">
+                <a href="https://www.facebook.com/profile.php?id=100042730211557" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="sbsr-1599">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Opening Times</h2>
+            <div class="box">
+                <ul class="cs-ul-times">
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                    <li>6:00 am - 6:00 pm</li>
+                    <li>6:00 am - 6:00 pm</li>
+                    <li>6:00 am - 6:00 pm</li>
+                    <li>6:00 am - 6:00 pm</li>
+                    <li>6:00 am - 6:00 pm</li>
+                    <li>7:30 am - 4:00 pm</li>
+                    <li>7:30 am - 8:00 pm</li>
+                </ul>
+            </div>
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/mugwindow.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/mugwindow.jpg">
+                <img id="location" loading="lazy" decoding="async" src="images/mugwindow.jpg" alt="people" width="608" height="406">
+            </picture>
+        </div>
+        <div class="cs-stats-group">
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="images/coffeepour.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="images/coffeepour.jpg">
+                <img loading="lazy" decoding="async" src="images/coffeepour.jpg" alt="people" width="608" height="662">
+            </picture>
+            <ul class="cs-stats">
+                <li class="cs-stat">
+                    <a id="btn_map" class="cs-button-solid" href="https://www.google.com/maps/search/?api=1&query=399+Little+Lonsdale+St,+Melbourne+VIC+3000&query_place_id=ChIJf4p9o0pd1moR_QV1u6AwLI0" data-fancybox="">View Map</a>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">Phone Number</span>
+                    <span class="cs-number">(03) 9929 8805</span>
+                </li>
+                <li class="cs-stat">
+                    <span class="cs-desc">E-Mail</span>
+                    <span class="cs-number">info@goldenmug cafe.com.au</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1765">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-wrapper">
+                <div class="cs-flex">
+                    <span class="cs-topper">The Favourites</span>
+                    <h2 class="cs-title">Take A Look At Our Most Popular Items!
+                </div>
+                <a id="btn_menu" class="cs-button-solid">View Our Menus!</a>
+            </div>
+            <div class="cs-wrapper">
+                <p class="cs-text">
+                    Indulge your taste buds in a culinary journey at our café, where every meal is a delightful adventure. Start your day with our scrumptious breakfast options, ranging from fluffy omellets to hearty breakfast rolls. For lunch, savor our diverse selection of sandwiches, salads, and burgers crafted with the freshest ingredients. As the day transitions to evening, treat yourself to our delectable dinner offerings, featuring mouthwatering entrees and flavorful sides that cater to every palate. Craving something sweet? Our decadent desserts and beverages are sure to satisfy any craving. With a menu as diverse as the day itself, there's something for everyone at our café, ensuring a memorable dining experience from sunrise to sunset!
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                        Vegan options avaliable
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                        Gluten free variations
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                        Exciting vegetarian alternatives!
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                        Diverse dishes for all meals of the day!
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                        Gluten free variations
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <a href="images/burgerandchips.jpg" data-fancybox="pop-items" data-caption="Classic Beef Burger">
+                            <img src="images/burgerandchips.jpg" loading="lazy" decoding="async" width="305" height="440"/>
+                        </a>
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Classic Beef Burger</span>
+                    <span class="cs-job">$14.00</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <a href="images/milkshakes.jpg" data-fancybox="pop-items" data-caption="Milkshakes!">
+                            <img src="images/milkshakes.jpg" loading="lazy" decoding="async" width="305" height="440"/>
+                        </a>
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Milkshake</span>
+                    <span class="cs-job">$5.50</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <a href="images/acaibowl.jpg" data-fancybox="pop-items" data-caption="Acai Bowl">
+                            <img src="images/acaibowl.jpg" loading="lazy" decoding="async" width="305" height="440"/>
+                        </a>
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Acai Bowl</span>
+                    <span class="cs-job">$12.00</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <a href="images/fluffyomelette.jpg" data-fancybox="pop-items" data-caption="Fluffy Omelette">
+                            <img src="images/fluffyomelette.jpg" loading="lazy" decoding="async" width="305" height="440"/>
+                        </a>
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Fluffy Omlette</span>
+                    <span class="cs-job">$11.00</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <a href="images/wafflefries.jpg" data-fancybox="pop-items" data-caption="Waffle Fries">
+                            <img src="images/wafflefries.jpg" loading="lazy" decoding="async" width="305" height="440"/>
+                        </a>
+                    </picture>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-name">Waffle Fries</span>
+                    <span class="cs-job">$7.00</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="all-style"> <!-- background for all futher sections -->
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+    
+    <section id="gallery-43">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">The Goods.</span>
+                <h2 class="cs-title" id="full_menu_title" style="scroll-margin-top: 70px;">Our Full Range of Menus and Catering Options</h2>
+                <p class="cs-text">
+                    Have a look at all our avaliable dishes for the meal of your choice! Also view our flexible catering options - from gluten-free, vegan, vegetarian and halal, we have special diet options to suit all needs. Nobody goes hungry on our watch.            </p>
+            </div>
+            <div class="cs-image-group">
+                <!-- Image 1 -->
+                <a class="cs-item" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/breakfastmenu.jpg">
+                        <source media="(min-width: 601px)" srcset="images/breakfastmenu.jpg">
+                        <img loading="lazy" decoding="async" src="images/breakfastmenu.jpg" width="346" height="346" data-fancybox="full-menus">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <picture class="cs-icon">
+                            <img loading="lazy" decoding="async" src="images/yellow-right-arrow.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Breakfast Menu</h3>
+                        <p class="cs-hover-box-text">
+                            (Click to enlarge)
+                        </p>
+                    </div>
+                </a>
+                <!-- Image 2 -->
+                <a class="cs-item" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/lunchanddinnermenu.jpg">
+                        <source media="(min-width: 601px)" srcset="images/lunchanddinnermenu.jpg">
+                        <img loading="lazy" decoding="async" src="images/lunchanddinnermenu.jpg" width="346" height="346" data-fancybox="full-menus">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <picture class="cs-icon">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="images/yellow-right-arrow.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Lunch and Dinner Menu</h3>
+                        <p class="cs-hover-box-text">
+                            (Click to enlarge)
+                        </p>
+                    </div>
+                </a>
+                <!-- Image 3 -->
+                <a class="cs-item" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/hotdrinksmenu.jpg">
+                        <source media="(min-width: 601px)" srcset="images/hotdrinksmenu.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/hotdrinksmenu.jpg" width="346" height="346" data-fancybox="full-menus">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <picture class="cs-icon">
+                            <img loading="lazy" decoding="async" src="images/yellow-right-arrow.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Hot Drinks Menu</h3>
+                        <p class="cs-hover-box-text">
+                            (Click to enlarge)
+                        </p>
+                    </div>
+                </a>
+                <!-- Image 4 -->
+                <a class="cs-item" href="">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" srcset="images/colddrinksmenu.jpg">
+                        <source media="(min-width: 601px)" srcset="images/colddrinksmenu.jpg">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="images/colddrinksmenu.jpg" width="346" height="346" data-fancybox="full-menus">
+                    </picture>
+                    <!-- Hover Box -->
+                    <div class="cs-hover-box">
+                        <picture class="cs-icon">
+                            <img loading="lazy" decoding="async" src="images/yellow-right-arrow.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Cold Drinks Menu</h3>
+                        <p class="cs-hover-box-text">
+                            (Click to enlarge)
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- ============================================ -->
+    <!--                 Promotions                   -->
+    <!-- ============================================ -->
+    
+    <section id="promotions-1567">
+        <div class="cs-container">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/istockphoto.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/istockphoto.jpg">
+                        <img loading="lazy" id="delivery" decoding="async" src="images/istockphoto.jpg" alt="room" width="630" height="354" style="scroll-margin-top: 100px;">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-tag">Order Delivery</span>
+                        <h2 class="cs-h2">Use Golden Mug 5 for 5% off.</h2>
+                        <a href="" class="cs-button-solid">Place Order</a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="images/pickup.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="images/pickup.jpg">
+                        <img loading="lazy" decoding="async" src="images/pickup.jpg" alt="room" width="630" height="354">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-tag">Order For Pickup</span>
+                        <h2 class="cs-h2">Set your own time!</h2>
+                        <a href="" class="cs-button-solid">Schedule Pickup</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+    
+    <section id="reviews-56">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="images/cafe1.webp">
+                <source media="(min-width: 601px)" srcset="images/cafe1.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/cafe1.webp" alt="man smiling" width="320" height="340">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Image: 399 Little Lonsdale </span>
+                <h2 class="cs-title" id="about">About The Golden<span> Mug Cafe</span></h2>
+                <div class="box">
+                    <p class="cs-review">
+                        Golden Mug Cafe is a unique place that combines the best Melbourne coffee-shop traditions and has a great relaxing atmosphere of Accor Hotels. Golden Mug Cafe is the perfect place for a morning cup of coffee to start the day and set the mood, or for a lunch break to have a relaxing one hour respite in a pleasant and stress-free environment. <br> <br>
+                        Golden Mug Cafe has always aimed at setting the perfect atmosphere for a comfortable and stress-free time, any hour of the day. Golden Mug Cafe is also particularly distinguished by its broad menu of home-brewed coffee drinks. Whether one is a definite gourmet coffee specialist or simply an inquisitive visitor, Golden Mug Cafe has made everyone fall in love with its unique coffee culture. <br> <br>
+                        Golden Mug Cafe has seeked to offer an exceptionally rich menu of coffee-based drinks, desserts and sandwiches for every taste. Golden Mug Cafe’s ultimate aim is to position itself as a special place with original coffee-brewing recipes from all over the world, perfect for a romantic date or a cosy getaway for anyone who values exceptional atmosphere and top quality service.
+                        <span class="cs-name">Come on down!</span>
+                    </p>
+                    <a id="btn_location" class="cs-button-solid">Location</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="scripts/goldenmug.js"></script>
+</div>
